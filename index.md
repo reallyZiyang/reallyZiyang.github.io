@@ -8,15 +8,31 @@ title: 首页
 </section>
 
 <section class="section-heading">
-  <h2>文章方向</h2>
+  <h2>系列文章</h2>
 </section>
 
-<section class="topic-list" aria-label="文章方向">
-  {% for topic in site.data.topics %}
-    <article class="topic-item">
-      <span>{{ topic.meta }}</span>
-      <h3>{{ topic.title }}</h3>
-      <p>{{ topic.description }}</p>
+<section class="series-list" aria-label="系列文章">
+  {% for series in site.data.series %}
+    {% assign series_posts = site.posts | where: "series", series.id | sort: "series_order" %}
+    <article class="series-card">
+      <div class="series-card-header">
+        <h3>{{ series.title }}</h3>
+        <span>{{ series_posts.size }} 篇</span>
+      </div>
+      <p>{{ series.description }}</p>
+      {% if series_posts.size > 0 %}
+        <ol>
+          {% for post in series_posts %}
+            <li>
+              <a href="{{ post.url | relative_url }}">
+                {{ post.series_order | prepend: "00" | slice: -2, 2 }}. {{ post.short_title | default: post.title }}
+              </a>
+            </li>
+          {% endfor %}
+        </ol>
+      {% else %}
+        <p class="empty-note">暂未发布。</p>
+      {% endif %}
     </article>
   {% endfor %}
 </section>
@@ -32,6 +48,9 @@ title: 首页
       <li class="article-item">
         <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
         <div>
+          {% if post.series_title %}
+            <span class="article-tag">{{ post.series_title }} {{ post.series_order | prepend: "00" | slice: -2, 2 }}</span>
+          {% endif %}
           <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
           {% if post.description %}
             <p>{{ post.description }}</p>

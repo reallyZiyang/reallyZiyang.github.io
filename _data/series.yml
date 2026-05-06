@@ -1,0 +1,7 @@
+- id: combat
+  title: 战斗系列
+  description: 从技能、Buff、Effect、状态、目标选择、结算和表现反馈这些底层概念开始，逐步整理战斗系统的设计思路。
+
+- id: framework
+  title: 框架系列
+  description: 记录 Unity 项目中的 UI、资源、模块、事件、热更新和工程结构等框架层经验。
