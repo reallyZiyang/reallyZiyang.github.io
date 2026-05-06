@@ -1,6 +1,6 @@
-# 个人博客
+# Unity 前端个人博客
 
-这是一个最简单的 GitHub Pages + Jekyll 博客模板，适合放文章和视频。
+这是一个最简单的 GitHub Pages + Jekyll 博客模板，适合放 Unity 前端技术文章和视频。
 
 ## 文件说明
 
@@ -11,6 +11,7 @@
 - `_posts/`：文章目录
 - `assets/videos/`：视频文件目录
 - `assets/css/style.css`：自定义样式
+- `_data/topics.yml`：首页文章方向
 
 ## 写文章
 

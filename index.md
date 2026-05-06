@@ -1,68 +1,56 @@
 ---
 layout: home
 title: 首页
-tabs: true
 ---
 
-这里用来放你的文章、视频和项目记录。首页按页签做了简单分类，方便招聘方快速了解你的知识体系和作品内容。
+<section class="intro-panel">
+  <p>我主要面向 Unity 前端开发岗位，文章会集中记录战斗、SDK 接入、框架设计和 AI 工具使用经验。内容尽量偏实战，重点写清楚问题背景、实现思路、踩坑过程和最终结果。</p>
+</section>
 
-<section class="index-tabs" data-tabs>
-  <div class="tab-list" role="tablist" aria-label="分类索引">
-    {% for tab in site.data.index %}
-      <button
-        class="tab-button{% if forloop.first %} is-active{% endif %}"
-        type="button"
-        role="tab"
-        aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"
-        data-tab-target="{{ tab.id }}"
-      >
-        {{ tab.title }}
-      </button>
-    {% endfor %}
-  </div>
+<section class="section-heading">
+  <h2>文章方向</h2>
+</section>
 
-  {% for tab in site.data.index %}
-    <section
-      class="tab-panel{% if forloop.first %} is-active{% endif %}"
-      data-tab-panel="{{ tab.id }}"
-      {% unless forloop.first %}hidden{% endunless %}
-    >
-      <div class="tab-panel-header">
-        <h2>{{ tab.title }}</h2>
-        <p>{{ tab.description }}</p>
-      </div>
-
-      {% if tab.posts %}
-        {% if site.posts.size > 0 %}
-          <ul class="index-list">
-            {% for post in site.posts limit:5 %}
-              <li>
-                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-                <span>{{ post.date | date: "%Y-%m-%d" }}</span>
-                {% if post.description %}
-                  <p>{{ post.description }}</p>
-                {% endif %}
-              </li>
-            {% endfor %}
-          </ul>
-        {% else %}
-          <p>还没有文章。</p>
-        {% endif %}
-      {% else %}
-        <ul class="index-list">
-          {% for item in tab.items %}
-            <li>
-              <a href="{{ item.link | relative_url }}">{{ item.title }}</a>
-              <span>{{ item.meta }}</span>
-              <p>{{ item.description }}</p>
-            </li>
-          {% endfor %}
-        </ul>
-      {% endif %}
-    </section>
+<section class="topic-list" aria-label="文章方向">
+  {% for topic in site.data.topics %}
+    <article class="topic-item">
+      <span>{{ topic.meta }}</span>
+      <h3>{{ topic.title }}</h3>
+      <p>{{ topic.description }}</p>
+    </article>
   {% endfor %}
 </section>
 
-## 维护方式
+<section class="section-heading">
+  <h2>最新文章</h2>
+  <a href="{{ '/posts/' | relative_url }}">查看全部</a>
+</section>
 
-分类索引内容在 `_data/index.yml` 里维护；文章继续放在 `_posts/`，视频继续放在 `assets/videos/` 并在 [视频]({{ "/videos/" | relative_url }}) 页面引用。
+{% if site.posts.size > 0 %}
+  <ol class="article-list">
+    {% for post in site.posts limit:8 %}
+      <li class="article-item">
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+        <div>
+          <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+          {% if post.description %}
+            <p>{{ post.description }}</p>
+          {% endif %}
+        </div>
+      </li>
+    {% endfor %}
+  </ol>
+{% else %}
+  <p>还没有文章。</p>
+{% endif %}
+
+<section class="quick-links" aria-label="其他内容">
+  <a href="{{ '/videos/' | relative_url }}">
+    <strong>视频展示</strong>
+    <span>Unity 项目演示、功能讲解和作品视频</span>
+  </a>
+  <a href="{{ '/about/' | relative_url }}">
+    <strong>关于我</strong>
+    <span>Unity 前端方向、技术栈和联系方式</span>
+  </a>
+</section>

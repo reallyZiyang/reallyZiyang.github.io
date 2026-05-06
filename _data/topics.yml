@@ -1,0 +1,15 @@
+- title: 战斗
+  description: 角色技能、状态机、命中判定、表现同步、战斗调试和性能优化。
+  meta: Gameplay / Combat
+
+- title: SDK 接入
+  description: 登录、支付、埋点、渠道包、平台回调、异常处理和接入流程复盘。
+  meta: SDK Integration
+
+- title: 框架
+  description: UI 框架、资源管理、模块拆分、事件系统、热更新和工程结构。
+  meta: Architecture
+
+- title: AI 使用经验
+  description: 用 AI 辅助写工具、查问题、生成脚本、整理方案和提升开发效率。
+  meta: AI Workflow
