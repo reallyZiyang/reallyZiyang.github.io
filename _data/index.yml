@@ -1,0 +1,48 @@
+# 首页页签索引内容。以后新增分类或条目，主要改这里。
+- id: knowledge
+  title: 知识体系
+  description: 按学习方向整理文章和笔记，方便招聘方快速看到你的技术覆盖面。
+  items:
+    - title: 前端基础
+      description: HTML、CSS、JavaScript、浏览器机制、页面性能等基础内容。
+      link: /posts/
+      meta: 技术文章
+    - title: 工程化与工具
+      description: Git、构建工具、部署流程、调试方法和常见开发规范。
+      link: /posts/
+      meta: 学习笔记
+    - title: 问题复盘
+      description: 记录项目中遇到的问题、排查过程和最终解决方案。
+      link: /posts/
+      meta: 复盘总结
+
+- id: works
+  title: 作品项目
+  description: 用项目条目展示你做过什么、负责什么，以及最终效果。
+  items:
+    - title: 项目作品集
+      description: 放项目背景、技术栈、职责范围、难点亮点和线上地址。
+      link: /posts/
+      meta: 项目总结
+    - title: 功能演示
+      description: 适合配合视频展示页面，说明功能流程和实际运行效果。
+      link: /videos/
+      meta: 视频演示
+    - title: 求职展示
+      description: 汇总最能代表能力的项目，保持简洁，方便面试官快速浏览。
+      link: /about/
+      meta: 简历辅助
+
+- id: posts
+  title: 文章
+  description: 最近发布的文章会自动出现在这里。
+  posts: true
+
+- id: videos
+  title: 视频
+  description: 视频文件可以直接放在 assets/videos 目录，也可以在这里索引外部视频。
+  items:
+    - title: 视频展示页
+      description: 集中放项目演示、课程记录、功能讲解或作品视频。
+      link: /videos/
+      meta: 视频索引

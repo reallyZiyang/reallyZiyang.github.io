@@ -79,6 +79,97 @@ a {
   font-size: 18px;
 }
 
+.index-tabs {
+  margin: 24px 0 40px;
+}
+
+.tab-list {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 18px;
+  overflow-x: auto;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.tab-button {
+  flex: 0 0 auto;
+  appearance: none;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: transparent;
+  color: #555;
+  cursor: pointer;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.4;
+  padding: 10px 12px;
+}
+
+.tab-button:hover,
+.tab-button:focus-visible {
+  color: #1756a9;
+}
+
+.tab-button.is-active {
+  border-bottom-color: #1756a9;
+  color: #111;
+}
+
+.tab-panel {
+  padding: 12px 0 4px;
+}
+
+.tab-panel-header {
+  margin-bottom: 18px;
+}
+
+.tab-panel-header h2 {
+  margin-bottom: 6px;
+}
+
+.tab-panel-header p {
+  max-width: 680px;
+  margin: 0;
+  color: #666;
+}
+
+.index-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.index-list li {
+  min-height: 154px;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.index-list a {
+  display: inline-block;
+  color: #111;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.index-list span {
+  display: block;
+  margin-top: 6px;
+  color: #777;
+  font-size: 13px;
+}
+
+.index-list p {
+  margin: 10px 0 0;
+  color: #555;
+  font-size: 15px;
+}
+
 .post-date {
   color: #777;
   font-size: 14px;
@@ -134,5 +225,9 @@ a {
   .post-date {
     display: block;
     margin-left: 0;
+  }
+
+  .index-list {
+    grid-template-columns: 1fr;
   }
 }
