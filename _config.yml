@@ -1,0 +1,13 @@
+title: 我的个人博客
+description: 文章、视频和求职作品展示
+lang: zh-CN
+timezone: Asia/Shanghai
+
+permalink: /posts/:title/
+
+header_pages:
+  - posts.md
+  - videos.md
+  - about.md
+
+markdown: kramdown
