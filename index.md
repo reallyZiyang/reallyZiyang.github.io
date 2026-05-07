@@ -4,7 +4,7 @@ title: 首页
 ---
 
 <section class="intro-panel">
-  <p>我主要面向 Unity 前端开发岗位，文章会集中记录战斗、SDK 接入、框架设计和 AI 工具使用经验。内容尽量偏实战，重点写清楚问题背景、实现思路、踩坑过程和最终结果。</p>
+  <p>这里主要记录游戏开发相关经验，内容会集中在战斗、SDK 接入、框架设计和 AI 工具使用等方向。文章尽量偏实战，重点写清楚问题背景、实现思路、踩坑过程和最终结果。</p>
 </section>
 
 <section class="section-heading">
@@ -65,10 +65,10 @@ title: 首页
 <section class="quick-links" aria-label="其他内容">
   <a href="{{ '/videos/' | relative_url }}">
     <strong>视频展示</strong>
-    <span>Unity 项目演示、功能讲解和作品视频</span>
+    <span>游戏项目演示、功能讲解和作品视频</span>
   </a>
   <a href="{{ '/about/' | relative_url }}">
     <strong>关于我</strong>
-    <span>Unity 前端方向、技术栈和联系方式</span>
+    <span>游戏开发方向、技术栈和联系方式</span>
   </a>
 </section>

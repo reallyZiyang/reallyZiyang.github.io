@@ -1,6 +1,6 @@
-# Unity 前端个人博客
+# 游戏开发个人博客
 
-这是一个最简单的 GitHub Pages + Jekyll 博客模板，适合放 Unity 前端技术文章和视频。
+这是一个最简单的 GitHub Pages + Jekyll 博客模板，适合放游戏开发技术文章和视频。
 
 ## 文件说明
 
