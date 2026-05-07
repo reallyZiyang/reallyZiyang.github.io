@@ -219,9 +219,6 @@ a {
 }
 
 .article-item {
-  display: grid;
-  grid-template-columns: 112px 1fr;
-  gap: 20px;
   border: 1px solid var(--border);
   border-radius: 8px;
   background: var(--surface);
@@ -233,12 +230,6 @@ a {
   border-color: #c9d7f2;
   box-shadow: var(--shadow);
   transform: translateY(-1px);
-}
-
-.article-item time {
-  color: var(--subtle);
-  font-size: 14px;
-  font-variant-numeric: tabular-nums;
 }
 
 .article-item h3 {
@@ -308,16 +299,6 @@ a {
 .quick-links span {
   color: var(--muted);
   font-size: 14px;
-}
-
-.post-date {
-  color: var(--subtle);
-  font-size: 14px;
-  margin-left: 8px;
-}
-
-.post-meta {
-  color: var(--subtle);
 }
 
 .post-lead {
@@ -552,8 +533,6 @@ a {
   }
 
   .article-item {
-    grid-template-columns: 1fr;
-    gap: 8px;
     padding: 18px;
   }
 
@@ -573,10 +552,5 @@ a {
 
   .concept-grid {
     grid-template-columns: 1fr;
-  }
-
-  .post-date {
-    display: block;
-    margin-left: 0;
   }
 }

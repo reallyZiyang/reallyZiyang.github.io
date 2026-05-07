@@ -38,7 +38,7 @@ title: 首页
 </section>
 
 <section class="section-heading">
-  <h2>最新文章</h2>
+  <h2>文章列表</h2>
   <a href="{{ '/posts/' | relative_url }}">查看全部</a>
 </section>
 
@@ -46,7 +46,6 @@ title: 首页
   <ol class="article-list">
     {% for post in site.posts limit:8 %}
       <li class="article-item">
-        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
         <div>
           {% if post.series_title %}
             <span class="article-tag">{{ post.series_title }} {{ post.series_order | prepend: "00" | slice: -2, 2 }}</span>
