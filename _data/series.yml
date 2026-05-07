@@ -5,3 +5,11 @@
 - id: framework
   title: 框架系列
   description: 记录 Unity 项目中的 UI、资源、模块、事件、热更新和工程结构等框架层经验。
+
+- id: ai-tools
+  title: AI 工具
+  description: 记录 AI 工具在开发、写作、排查问题和整理思路中的使用经验，偏杂项总结，不追求体系化展开。
+
+- id: sdk
+  title: SDK 接入
+  description: 记录登录、支付、渠道、平台能力等 SDK 接入过程中的经验和注意点，偏零散问题总结，不作为完整接入教程。
