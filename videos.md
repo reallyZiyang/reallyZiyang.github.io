@@ -52,10 +52,36 @@ permalink: /videos/
 
   <article class="video-series">
     <div class="video-series-header">
-      <h2>即时动作肉鸽</h2>
-      <span>0 个视频</span>
+      <h2>即时战斗</h2>
+      <span>3 个视频</span>
     </div>
-    <p>即时动作肉鸽方向的战斗操作、技能组合、成长构筑和表现演示。</p>
-    <p class="empty-note">暂未添加视频。</p>
+    <p>即时战斗方向的技能编辑、动作表现、自动战斗和战斗系统演示。</p>
+
+    <div class="video-item">
+      <h3>技能编辑器</h3>
+      <p>展示即时战斗技能编辑器的配置和预览流程。</p>
+      <video controls preload="metadata" width="100%">
+        <source src="{{ '/assets/videos/realtime-combat-skill-editor.mp4' | relative_url }}" type="video/mp4">
+        你的浏览器不支持 video 标签。
+      </video>
+    </div>
+
+    <div class="video-item">
+      <h3>即时动作战斗</h3>
+      <p>展示即时动作战斗中的角色操作、技能释放和命中表现。</p>
+      <video controls preload="metadata" width="100%">
+        <source src="{{ '/assets/videos/realtime-action-combat.mp4' | relative_url }}" type="video/mp4">
+        你的浏览器不支持 video 标签。
+      </video>
+    </div>
+
+    <div class="video-item">
+      <h3>即时自动战斗</h3>
+      <p>展示即时自动战斗中的单位行动、技能触发和战斗推进。</p>
+      <video controls preload="metadata" width="100%">
+        <source src="{{ '/assets/videos/realtime-auto-combat.mp4' | relative_url }}" type="video/mp4">
+        你的浏览器不支持 video 标签。
+      </video>
+    </div>
   </article>
 </section>
