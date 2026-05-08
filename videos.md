@@ -4,23 +4,41 @@ title: 视频
 permalink: /videos/
 ---
 
-把视频文件放进 `assets/videos/` 目录，然后按下面的格式添加到这个页面。建议视频压到几十 MB 以内；如果文件较大，放到 B 站、YouTube、网盘或对象存储会更合适。
+这里放一些项目演示和功能展示视频，按项目方向做简单分类。
 
-## 项目演示视频
+<section class="video-series-list" aria-label="视频系列">
+  <article class="video-series">
+    <div class="video-series-header">
+      <h2>回合制战斗</h2>
+      <span>1 个视频</span>
+    </div>
+    <p>回合制战斗流程、战报播放、技能表现和战斗编辑器相关展示。</p>
 
-还没有添加视频。
+    <div class="video-item">
+      <h3>回合制战斗演示 01</h3>
+      <p>展示回合制战斗中的角色行动、技能表现和战斗流程播放。</p>
+      <video controls preload="metadata" width="100%">
+        <source src="{{ '/assets/videos/turn-based-battle-01.mp4' | relative_url }}" type="video/mp4">
+        你的浏览器不支持 video 标签。
+      </video>
+    </div>
+  </article>
 
-添加视频时，可以复制下面这段，把 `your-video.mp4` 改成实际文件名：
+  <article class="video-series">
+    <div class="video-series-header">
+      <h2>塔防肉鸽</h2>
+      <span>0 个视频</span>
+    </div>
+    <p>塔防肉鸽方向的玩法、技能构筑、关卡节奏和系统演示。</p>
+    <p class="empty-note">暂未添加视频。</p>
+  </article>
 
-{% raw %}
-```html
-<div class="video-item">
-  <h3>视频标题</h3>
-  <p>这里写一两句话说明这个视频展示了什么。</p>
-  <video controls preload="metadata" width="100%">
-    <source src="{{ '/assets/videos/your-video.mp4' | relative_url }}" type="video/mp4">
-    你的浏览器不支持 video 标签。
-  </video>
-</div>
-```
-{% endraw %}
+  <article class="video-series">
+    <div class="video-series-header">
+      <h2>即时动作肉鸽</h2>
+      <span>0 个视频</span>
+    </div>
+    <p>即时动作肉鸽方向的战斗操作、技能组合、成长构筑和表现演示。</p>
+    <p class="empty-note">暂未添加视频。</p>
+  </article>
+</section>
