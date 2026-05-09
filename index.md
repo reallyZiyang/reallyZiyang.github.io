@@ -67,8 +67,4 @@ title: 首页
     <strong>视频展示</strong>
     <span>游戏项目演示、功能讲解和作品视频</span>
   </a>
-  <a href="{{ '/about/' | relative_url }}">
-    <strong>关于我</strong>
-    <span>游戏开发方向、技术栈和联系方式</span>
-  </a>
 </section>

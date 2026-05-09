@@ -7,7 +7,6 @@
 - `index.md`：首页
 - `posts.md`：文章列表
 - `videos.md`：视频页面
-- `about.md`：关于我
 - `_posts/`：文章目录
 - `assets/videos/`：视频文件目录
 - `assets/css/style.css`：自定义样式

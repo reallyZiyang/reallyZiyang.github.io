@@ -8,6 +8,5 @@ permalink: /posts/:title/
 header_pages:
   - posts.md
   - videos.md
-  - about.md
 
 markdown: kramdown
