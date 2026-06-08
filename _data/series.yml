@@ -9,3 +9,7 @@
 - id: ai-tools
   title: AI 工具
   description: 记录 AI 工具在开发、写作、排查问题和整理思路中的使用经验，偏思考和使用判断，不追求体系化展开。
+
+- id: performance
+  title: 性能优化系列
+  description: 整理游戏客户端在同屏大量单位、特效、抛射物、飘字和碰撞检测等高并发表现下的性能优化思路。
